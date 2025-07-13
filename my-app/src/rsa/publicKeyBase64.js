@@ -1,0 +1,5 @@
+const publicKeyBase64 = `
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt9o3pwCB0v5YpLqQZGlw92GPmHOxchdaEkfOj4AUuCAOKqUbl+B5XsWjAyooD94bkUFm0WyBgLMSiM5wSytGKOmWK01+KMtvGi4TB7nMsFBW/1dxk9uago8+DyYm0R2hWgRsstFjxIR2MvHKql261WLAQbXU8biHTI7cNw5C/gsBiVIc54bkwZikHVjFnWuoqTokhcsYNgSymXUB2jAcN4CnG6HnE7AzZqW4yvmzaVZ+4/Jj2DOrci/UL864ibhl2i2TUXuEWeA5rAl+8jOHmoFXDWl4dka4JP/wzlmfcGZRfXzKIPrgaJWHWNEHg2uL4kiIiZDR5CKhMrq6DM02BQIDAQAB
+`.replace(/\s+/g, "");
+
+export default publicKeyBase64;
