@@ -4,6 +4,8 @@ import config from "../config/config";
 
 const CompletedOrdersTable = () => {
   const [completedOrders, setCompletedOrders] = useState([]);
+  console.log("API URL at runtime:", process.env.REACT_APP_API_URL);
+console.log("Config API URL:", config.apiUrl);
 
   useEffect(() => {
     const fetchCompletedOrders = async () => {
