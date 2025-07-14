@@ -7,7 +7,7 @@ export default function WebviewScreen() {
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
       <WebView
-        source={{ uri: "http://192.168.1.14:3000" }} // Use your computer's IP address
+        source={{ uri: "https://www.helpingbots.in" }}
         style={{ flex: 1 }}
         startInLoadingState={true}
       />
