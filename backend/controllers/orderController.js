@@ -27,7 +27,10 @@ export const addNewBuyerOrder = async (req, res) => {
 
 export const getAllBuyerOrders = async (req, res) => {
   try {
-    const buyers = await prisma.buyerOrder.findMany();
+    const buyers = await prisma.buyerOrder.findMany({
+      where: { isCompleted: false },
+      orderBy: { createdAt: "asc" },
+    });
     console.log("Pending Buyers Order Found:", buyers.length, "orders");
     res.json(buyers);
   } catch (err) {
